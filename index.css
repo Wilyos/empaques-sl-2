@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
-    color: #fff;
+    
 }
 
 :root {
@@ -29,8 +29,10 @@ container{
     
     height: 200px;
     width: 100%;
-    background-image: url('/assets/images/background/banner-info.png');
+    background-image: url('/assets/images/background/bgmenu.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 .slider {
@@ -112,13 +114,14 @@ container{
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
+    color: #fff;
     transition: color 0.2s;
     
 
 }
 
 .menu li:hover {
-    color: #b6ffb6;
+    color: #06aa06ff;
 }
 
 .search-icon {
@@ -312,9 +315,9 @@ container{
   align-items: flex-start;
   gap: 3rem;
   background:  url('assets/images/background/banner-contact.png') repeat;
-  background-size: cover;
-  padding: 3rem 2vw;
-  margin: 0;
+  background-size: contain;
+  padding: 5rem 2vw;
+  margin: 0 ;
   color: #fff;
 }
 
@@ -331,6 +334,14 @@ container{
 .contact-info {
   margin-right: 1rem;
  
+}
+
+.vl {
+  
+  border-left: 2px solid white;
+  height: 75vh;
+  position: absolute;
+  top: 
 }
 
 .contact-form {
@@ -427,16 +438,16 @@ container{
 /* Footer */
 .footer-section {
   background: #0e2a0e url('assets/images/background/banner-contact.png') repeat;
-  background-size: cover;
-  padding: 2.5rem 0 1.5rem 0;
-  border-top: 1px solid #fff;
+  background-size: contain;
+  padding: 0 0 1.5rem 0;
   color: #fff;
   width: 100%;
+  margin:0;
 }
 
 .footer-content {
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 3rem auto;
   display: flex;
   gap: 2.5rem;
   justify-content: space-between;
@@ -481,7 +492,7 @@ container{
   align-items: center;
 }
 
-footer-social li{
+.footer-social li{
   color: #143101;
 }
 
@@ -491,12 +502,12 @@ footer-social li{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #143101;
+  background: linear-gradient(  #429c47ff, #32551eff);
   border-radius: 50%;
   margin: 0 8px;
   filter: none;
   transition: background 0.2s, filter 0.2s;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 300;
   color: #143101;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
